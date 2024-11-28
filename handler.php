@@ -29,13 +29,24 @@
         <body>
 
           <?php
-          $myVariable = "";
-          $number_of_digits ='';
-           
-          if (isset($_POST['myVariable'])) {
-            $myVariable = $_POST['myVariable'];
+          $myVariable = 'number_of_digits';
+          $number_of_digits = 0;
+          $pi = '';
+          if (isset($_POST['number_of_digits'])) {
+            $number_of_digits = $_POST['number_of_digits'];
           }
-          echo "<h1>My Program</h1>\n";
+          echo "number of digits is", $number_of_digits;
+          if ($number_of_digits <= 0) {
+
+            echo "Reenter number digits : number must be greater than 0.";
+          } else {
+            echo " number is good";
+        }
+        funtion calc($digits)
+        {
+        $pi=
+
+            echo "<h1>My Program</h1>\n";
           echo "<p>My Variable is = " . $myVariable . "</p>\n";
           ?>
 
