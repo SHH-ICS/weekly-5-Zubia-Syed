@@ -41,13 +41,18 @@
             echo "Reenter number digits : number must be greater than 0.";
           } else {
             echo " number is good";
-        }
-        funtion calc($digits)
-        {
-        $pi=
 
-            echo "<h1>My Program</h1>\n";
-          echo "<p>My Variable is = " . $myVariable . "</p>\n";
+            function findPi($digits)
+            {
+              $result = 0;
+              for ($i = 0; $i < $digits; $i++) {
+                $result += 4 * pow(-1, $i) / (2 * $i + 1);
+              }
+              return $result;
+        }
+          echo "<h1></h1>\n";
+          echo "<p> Pi: " . $result[1] . "</p>\n";
+          
           ?>
 
         </body>
